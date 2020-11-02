@@ -9,7 +9,9 @@ app.config.from_object('app.config')
 from app.logger_setup import logger
 
 # Setup the database
-from flask.ext.sqlalchemy import SQLAlchemy
+# from flask.ext.sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
+
 db = SQLAlchemy(app)
 
 # Setup the mail server
